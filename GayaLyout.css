@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    color: white;
+}
+body{
+    font-family: 'poppins', sans-serif;
+    min-height: 600px;
+    background-color: #78A083;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    padding: 10rem 7% 1,4rem;
+
+}
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    background-color:rgb(1, 1, 1, 0.8);
+    /* border-bottom: 5px solid #78A083;  */
+    border-bottom: 5px solid #003C43;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+	
+}
+/* .iconav{
+    color:white;
+    margin: 0 0,5rem;
+} */
+.navbar-icons{
+    font-size: 2rem;
+    font-weight: 700;
+    color:white;
+    font-style:italic ;
+}
+.navbar-icons span{
+    color:#78A083;
+}
+/* .isi{
+    display: inline;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+} */
+.isi a {
+    text-align: center;
+    color: white;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    margin: 1rem;
+}
+.isi a:hover{
+    color:rgb(52, 73, 85);
+}
+.isi a::after{
+    transition: 0.10s linear;
+}
+
+/* .tombol{
+    background-color: darkcyan;
+    border: 3px solid black;
+    list-style-type: none;
+    text-align: center;
+    font-family: Arial;
+    margin: 1px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}  */
+                    /* CSS Layout */
+
+.content-layout {
+    display: flex; /* Jadikan container sebagai flexbox */
+    width: 100%;
+
+}
+.content-layout .g2 {
+    flex: 1; 
+    width: 450px;
+    margin: 5rem;
+    margin-top: 10rem;
+    /* border: 5px solid #ccc;
+    border-radius: 50%; */
+}
+.g2 img {
+    width: 100%; 
+    border-radius: 50%;
+    border: 5px solid #ccc;
+}
+
+.content-layout .layout-isi {
+    display: flex;
+    flex: 1 1 20rem;
+    flex-direction: column; 
+    padding: 20px; 
+    width: 450px;
+    height: auto;
+    justify-content: center;
+}
+
+.layout-isi h2 {
+    text-align: center;
+    font-size: 1.2rem; 
+    margin-bottom: 2px;
+}
+
+.layout-isi h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1px;
+    font-family: poppins 1,300;
+}
+
+.layout-isi span{
+    color:#222831
+}
+
+.layout-isi h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+                    /* CSS Lyout end */
+
+
+
+                /*  CSS SKILL */
+.container-box {
+    display: flex;
+    flex-direction: row; /* Atur box berbaris secara horizontal */
+    flex-wrap: wrap; /* Membungkus box ke baris berikutnya jika tidak muat */
+    justify-content: space-around; /* Membuat jarak yang sama antara boxke box */
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+.container-box h1{
+    margin: 0;
+    margin-top: 10px;
+    padding: 20px 0; /*  padding atas dan bawah */
+    text-align: center; 
+    font-size: 30px; 
+    width: 100%; 
+}
+  /* Style untuk setiap box */
+.box-1, .box-2, .box-3 {
+    width: 300px; 
+    height: 350px; 
+    border: 5px solid #ccc; 
+    margin: 10px; /* Jarak antar box  */
+    text-align: center; 
+    padding: 20px; /* padding di dalam box */
+    background-color: #222831;
+
+}
+.box-1 img{
+    width: 65%;
+    align-items: center;
+    height: auto;
+    display: flexbox;
+    margin-bottom: 10px;
+    justify-content: center;
+    
+}
+.box-2 img{
+    width: 100%; 
+    height: auto; 
+    display: flexbox; 
+    margin-bottom: 10px; 
+    /* background-color: #ccc; */
+}
+.box-3 img {
+    width: 65%;
+    height: auto; 
+    display: flexbox; 
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.box-1 h3, .box-2 h3, .box-3 h3 {
+    margin: 0; 
+    font-size: 20px; 
+    font-weight: bold; 
+}
+.box-1 p, .box-2 p, .box-3 p {
+    line-height: 1.5; /* Jarak baris paragraf  */
+}
+                    /* CSS SKILL END */
+
+                    /* CSS ABOUT STAR */
+
+.content-about {
+    display: flex; /* Jadikan container sebagai flexbox */
+    width: 100%;
+    height: 0%;
+
+}
+.content-about h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 8rem;
+
+}
+.content-about .g-about {
+    flex: 1; 
+    width: 450px;
+    margin: 5rem;
+    margin-top: 10rem;
+    /* border: 5px solid #ccc;
+    border-radius: 50%; */
+
+}
+.g-about img {
+    width: 100%; 
+    border-radius: 50%;
+    border: 5px solid #222831;
+}
+
+.content-about .about-isi {
+    display: flex;
+    flex: 1 1 20rem;
+    flex-direction: column; 
+    padding: 20px; 
+    width: 450px;
+    height: 300px;
+    text-align: center;
+    justify-content: center;
+}
+
+.about-isi h2 {
+    text-align: center;
+    font-size: 1.6rem; 
+    margin-bottom: 3px;
+}
+
+.about-isi p {
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.5;
+}
+                    /* CSS ABOUT END  */
+
+                    /* CSS CONTACT STAR */
+
+#content-contact{
+    padding: 7rem 7% 2rem;
+}
+.content-contact{
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+}
+
+.contact-from div{
+    margin-bottom: 1.5rem;
+}
+.contact-from input, .contact-from textarea{
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    font-family: sans-serif;
+    background-color:#222831;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    resize: none;
+}
+.contact-from input::placeholder, .contact-from textarea:: ::placeholder{
+    color: #9d9fa1;
+
+}
+.contact-from input:focus, .contact-from textarea:focus{
+    outline: none;
+    border: 1px solid #7d7d7d;
+}
+.btn-submit{
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background-color:#003C43;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2 ease-in-out;
+}
+.btn-submit:hover{
+    background-color:#222831;
+}
+.contact-items{
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+.contact-item-icon{
+    background-color:#222831;
+    width: 53px;
+    height: 53px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-item-icon svg{
+    fill: #ccc;
+}
+.contact-item-detail h4{
+margin-bottom: 0.5rem;
+}
+
+
+
+
+                    /* CSS CONTACT END */
+
+
+                    /* RESPONSIF WEB STAR */
+
+        /*laptop*/
+    @media (max-width: 1200px){
+        html{
+            font-size: 75%;
+        }
+    }
+        /*tablet*/
+    @media (max-width: 768px){
+        html{
+            font-size: 62%;
+        }
+    }
+            /*phone*/
+            @media (max-width: 450px){
+                html{
+                    font-size: 55%;
+                }
+
+    }
+                    /* CSS RESPONSIF WEB END */
+
+
+
+
+
+}
+
